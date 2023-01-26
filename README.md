@@ -1,5 +1,7 @@
 # Jeremy G Heroku Resume site 
 
+Here is the site:<br>
+https://jeremyresume.herokuapp.com
 
 ...and now we build.
 
