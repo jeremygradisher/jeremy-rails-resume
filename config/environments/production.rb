@@ -22,7 +22,7 @@ Rails.application.configure do
   config.eager_load = true
   config.action_mailer.delivery_method = :smtp
   #simpl addition of www here to try and change the email confirmation links
-  config.action_mailer.default_url_options = { :host => 'mappingleaflet.herokuapp.com', :protocol => 'https'}
+  config.action_mailer.default_url_options = { :host => 'jeremyresume.herokuapp.com', :protocol => 'https'}
 
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
@@ -99,5 +99,5 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
   
-  config.hosts << "mappingleaflet.herokuapp.com"
+  config.hosts << "jeremyresume.herokuapp.com"
 end
