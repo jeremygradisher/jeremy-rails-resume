@@ -1,10 +1,10 @@
-<% if current_user && current_user.id == @map.user_id || current_user.is_admin? %>
-
   <div class="row" id="mapHolder">
     <div class="col-xs-10 col-xs-offset-1">
     	<%- model_class = Area -%>
 		<div class="page-header">
 		  <h1><%=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human.titleize %></h1>
+			*Click on the polygon in the left nav and draw a shape. Be sure and connect last point to the first.
+			Give it a name and sq footage and save it!
 		</div>
     	
       <%= render 'editmap' %>
@@ -72,6 +72,3 @@
 		<%= render :partial => 'form' %>
 	</div>
   </div>
-<% else %>
- <h2>You are not authorized to be here. <a href="/" class="btn btn-default">Return Home</a></h2>
-<% end %>

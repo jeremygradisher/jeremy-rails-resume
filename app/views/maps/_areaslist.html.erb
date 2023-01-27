@@ -33,9 +33,11 @@
         <td>
           <%= link_to t('.show', :default => t("helpers.links.show")),
                       area_path(area), :class => 'btn btn-default btn-xs' %>
-          <% if current_user.is_admin? || current_user.id == area.map.user_id %>            
+          <% if current_user && current_user.is_admin? || current_user && current_user.id == area.map.user_id %>            
+          
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_area_path(area), :class => 'btn btn-primary btn-xs' %>
+          
           <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
                       area_path(area),
                       :method => :delete,

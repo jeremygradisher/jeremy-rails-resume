@@ -1,4 +1,3 @@
-<% if current_user %>
 <%- model_class = Map -%>
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
@@ -31,7 +30,7 @@
         <td>
           <%= link_to t('.show', :default => t("helpers.links.show")),
                       map_path(map), :class => 'btn btn-default' %>
-          <% if current_user.is_admin? || current_user.id == map.user_id %>           
+          <% if current_user && current_user.is_admin? || current_user && current_user.id == map.user_id %> 
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_map_path(map), :class => 'btn btn-primary' %>
           <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
@@ -46,10 +45,8 @@
   </tbody>
 </table>
 
+<% if current_user %>
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_map_path,
             :class => 'btn btn-primary' %>
-
-<% else %>
- <h2>Must be logged in. <a href="/" class="btn btn-default">Return Home</a></h2>
 <% end %>
