@@ -4,7 +4,9 @@
       <div class="page-header">
         <h1 style="float:left;"><%=t '.title', :default => model_class.model_name.human.titleize %>: <%= @map.name %></h1>
         <%= link_to '+ Add space', new_area_path(:map_id => @map), :class => 'btn btn-primary responsive-none print-none', :style => 'float:right;margin-top:28px;' %>
+        
         <br style="clear:both;">
+        *Click <%= link_to '+ Add space', new_area_path(:map_id => @map) %> and draw new areas on the map!
       </div>
       
       <%= render 'fullmap' %>
@@ -18,6 +20,7 @@
         <%= link_to '+ Add space', new_area_path(:map_id => @map), :class => 'btn btn-primary responsive-none print-none', :style => 'float:right;' %>
         <%# end %>
         <h1>Areas</h1>
+        *You can see below what the "Area" saves. Some info and coordinates in JSON and a few fields of information. 
       </div>
     
       <%= render 'areaslist' %>
