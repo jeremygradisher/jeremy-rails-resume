@@ -57,10 +57,12 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Interactive Mapping <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><%= link_to "Maps", maps_path%></li>
+                <% if current_user %>
                 <li role="separator" class="divider"></li>
                 <li><%= link_to "Map Images", mapimages_path  %></li>
                 <li><%= link_to "Areas", areas_path  %></li>
                 <li><%= link_to "Area Images", areaimages_path  %></li>
+                <% end %>
               </ul>
             </li>
           </ul>
