@@ -4,3 +4,25 @@
   Static version of css will use Glyphicons sprites by default
   =require twitter-bootstrap-static/sprites
 */
+
+
+@media only screen and (max-width: 768px) {
+  .responsive_none {
+    display:none;
+  }
+  
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+  p, h1, h2, h3 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  [class*="col-xs-offset-"] {
+    margin-left: 0;
+}
+}
