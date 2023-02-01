@@ -55,6 +55,12 @@ a.btn-primary,a.btn-primary:visited, a.btn-danger,a.btn-danger:visited { color: 
 //colors
 
 
+//layout
+
+.min_view_height {min-height: 80vh;}
+
+//END layout
+
 //print stuff
 @media print {
     .btn {display:none;}
