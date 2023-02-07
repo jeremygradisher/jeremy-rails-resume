@@ -33,7 +33,7 @@ gem 'jbuilder'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem "nokogiri", ">= 1.10.8"
+gem "nokogiri"
 
 #bootstrap it up
 gem 'twitter-bootstrap-rails'
