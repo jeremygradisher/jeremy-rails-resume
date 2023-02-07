@@ -364,7 +364,7 @@ DEPENDENCIES
   mimemagic (~> 0.4.3)
   mini_magick
   mtg_sdk
-  nokogiri (>= 1.10.8)
+  nokogiri
   pg
   puma
   rails (~> 7.0.0)
