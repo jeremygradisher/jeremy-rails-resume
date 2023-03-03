@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
   
   get 'magic', to: "magic#index"
+  get 'react', to: "react#index"
   
   #resources :users, :only => [:index, :show, :destroy]
   resources :users
