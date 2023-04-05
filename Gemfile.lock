@@ -361,7 +361,7 @@ DEPENDENCIES
   jbuilder
   jquery-rails
   listen
-  mimemagic (~> 0.4.3)
+  mimemagic (>= 0.4.3)
   mini_magick
   mtg_sdk
   nokogiri

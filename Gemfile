@@ -47,7 +47,8 @@ gem 'fog-aws'
 #for counting queries
 gem 'sql_queries_count'
 
-gem 'mimemagic', '~> 0.4.3'
+#gem 'mimemagic', '~> 0.4.3'
+gem 'mimemagic', '>= 0.4.3'
 
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 
