@@ -1,9 +1,15 @@
 class MagicController < ApplicationController
+  require 'mtg_sdk'
+  
   def index
       
-      #Trying to figure out how this works:
+      @card = MTG::Card.find(409574)
       #@card = MTG::Card.find(386616)
-      #@cards = MTG::Card.where(name: 'Westgate Regent').all
+      #puts @card.name
+      
+      #@cards = MTG::Card.where(name: 'Squee').all
+      #@cards = MTG::Card.where(name: '"Westgate Regent"').all
+      
 
   end
 end

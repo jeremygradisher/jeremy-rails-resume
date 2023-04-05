@@ -1,12 +1,19 @@
 <div class="row">
   <div class="col-xs-10 col-xs-offset-1">
       <h1 style="margin-bottom:40px;">New Playground to show off my skill-set...</h1>
-        <p>
+
             <strong>Testing</strong><br>
-            This is where I am testing the Magic the Gathering SDK...
-            <%= @card %><br><br>
+            <h1><%= @card.name %></h1>
+            <%= image_tag @card.image_url %>
+            <!--<p><%#= @card.text %></p>-->
             
-            <%= @cards %>
-        </p>
+            <%# @cards.each do |card| %>
+              <%#= image_tag card.image_url %>
+            <%# end %>
+            
+            
+            <img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=527413&type=card" />
+            <img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386616&type=card" />
+
   </div>
 </div>
